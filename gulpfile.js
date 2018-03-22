@@ -1,6 +1,6 @@
-var gulp = require('gulp'),
-  uglify = require('gulp-uglify'),
-  concat = require('gulp-concat');
+var gulp = require('gulp');
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
 
 gulp.task('js', function () {
   return gulp.src('src/js/*.js')
