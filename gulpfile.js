@@ -21,4 +21,8 @@ gulp.task('css', function () {
     .pipe(gulp.dest('dist/css/'))
 });
 
-gulp.task('default', [ 'css', 'js']);
+gulp.task('watch', function () {
+  gulp.watch(['src/css/*.css', 'src/sass/*.scss'], ['css']);
+  gulp.watch('src/js/*.js', ['js']);
+});
+
