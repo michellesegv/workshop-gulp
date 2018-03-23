@@ -20,3 +20,5 @@ gulp.task('css', function () {
     .pipe(minifycss())
     .pipe(gulp.dest('dist/css/'))
 });
+
+gulp.task('default', [ 'css', 'js']);
